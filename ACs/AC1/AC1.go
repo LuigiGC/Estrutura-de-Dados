@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func calcularMedia(val[] float64)float64 {
+func calcularMedia(val ... float64)float64 {
 	soma := 0.0
 	for _ , num := range val{
 		soma += num
@@ -34,10 +34,10 @@ func main() {
 	expoente := 3
 	temp := 32.0
 	p := 90
-	val := []float64{10.0,20.0,10.0,20.0}
+
 
 	fmt.Println(converteCelsiusParaFahrenheit(temp), "°F")
 	fmt.Println(minhaPotencia(base, expoente))
 	fmt.Println(verificarParidade(p))
-	fmt.Println(calcularMedia(val))
+	fmt.Println(calcularMedia(10.0,20.0,10.0,15.0))
 }
