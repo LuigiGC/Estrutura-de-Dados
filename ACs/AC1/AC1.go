@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
-//Fazer
-func calcularMedia(a, b float64) {
-
+func calcularMedia(val[] float64)float64 {
+	soma := 0.0
+	for _ , num := range val{
+		soma += num
+	}
+	return soma / float64(len(val))
 }
 
 func verificarParidade(p int) string {
@@ -22,7 +25,7 @@ func minhaPotencia(y, z int) int {
 	return res
 }
 
-//Pronto
+
 func converteCelsiusParaFahrenheit(x float64) float64 {
 	return x*1.8 + 32
 }
@@ -30,9 +33,11 @@ func main() {
 	y := 8
 	z := 3
 	x := 32.0
-	p := 99
+	p := 90
+	val := []float64{10.0,20.0,10.0,20.0}
 
 	fmt.Println(converteCelsiusParaFahrenheit(x), "°F")
 	fmt.Println(minhaPotencia(y, z))
 	fmt.Println(verificarParidade(p))
+	fmt.Println(calcularMedia(val))
 }
