@@ -17,27 +17,27 @@ func verificarParidade(p int) string {
 		return "Impar"
 	}
 }
-func minhaPotencia(y, z int) int {
+func minhaPotencia(base, expoente int) int {
 	res := 1
-	for i := 0; i < z; i++ {
-		res *= y
+	for i := 0; i < expoente; i++ {
+		res *= base
 	}
 	return res
 }
 
 
-func converteCelsiusParaFahrenheit(x float64) float64 {
-	return x*1.8 + 32
+func converteCelsiusParaFahrenheit(temp float64) float64 {
+	return temp*1.8 + 32
 }
 func main() {
-	y := 8
-	z := 3
-	x := 32.0
+	base := 8
+	expoente := 3
+	temp := 32.0
 	p := 90
 	val := []float64{10.0,20.0,10.0,20.0}
 
-	fmt.Println(converteCelsiusParaFahrenheit(x), "°F")
-	fmt.Println(minhaPotencia(y, z))
+	fmt.Println(converteCelsiusParaFahrenheit(temp), "°F")
+	fmt.Println(minhaPotencia(base, expoente))
 	fmt.Println(verificarParidade(p))
 	fmt.Println(calcularMedia(val))
 }
