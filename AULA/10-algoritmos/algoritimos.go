@@ -5,8 +5,7 @@ import "fmt"
 func tomadas() {
 	var t1, t2, t3, t4 int8
 	fmt.Scanln(&t1, &t2, &t3, &t4)
-	fmt.Println(t1, t2, t3, t4)
-
+	fmt.Println(t1 + t2 + t3 + t4 - 3)
 }
 
 func meteoritos() {
@@ -49,32 +48,10 @@ func maiorNumero() {
 		}
 	}
 	fmt.Println(maior)
-
 }
 
-func buscaMatriz(m [][]int, n int, k int) bool {
-	for i := 0; i < n; i++ {
-		for j := 0; j < n; j++ {
-			if m[i][j] == k {
-				return true
-			}
-		}
-
-	}
-	return false
-}
 func main() {
-	//tomadas()
-
-	m := [][]int{
-		{1, 2, 3},
-		{6, 4, 5},
-		{7, 8, 9},
-	}
-	n := 3
-	k := 0
-	resultado := buscaMatriz(m, n, k)
-
-	println(resultado)
-
+	// tomadas()
+	// meteoritos()
+	maiorNumero()
 }
