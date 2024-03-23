@@ -10,7 +10,7 @@ func main() {
 
 	fmt.Scan(&codP2, &qntP2, &valP2)
 
-	total := (float64(qntP1)*valP1) + (float64(qntP2)*valP2)
+	total := (float64(qntP1) * valP1) + (float64(qntP2) * valP2)
 
 	fmt.Printf("VALOR A PAGAR: R$ %.2f\n", total)
 }
