@@ -67,7 +67,7 @@ func main() {
 	var op string
 	var f1, f2, resultado Fracao
 
-	fmt.Scanln(&N)
+	fmt.Scan(&N)
 
 	for i := 0; i < N; i++ {
 		fmt.Scanf("%d / %d %s %d / %d", &f1.num, &f1.den, &op, &f2.num, &f2.den)
