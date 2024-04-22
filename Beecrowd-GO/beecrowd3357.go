@@ -7,7 +7,7 @@ func main() {
 	var N int
 	var L, Q float64
 	var part []string
-
+	
 	fmt.Scanln(&N, &L, &Q)
 
 	part = make([]string, N)
