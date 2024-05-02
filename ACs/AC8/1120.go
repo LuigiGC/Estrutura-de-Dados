@@ -19,19 +19,12 @@ func main() {
         if chave == "0" && texto == "0" {
             break
         }
-
-
         textoModificado := strings.ReplaceAll(texto, chave, "")
-
-
         textoModificado = strings.TrimLeft(textoModificado, "0")
-
 
         if textoModificado == "" {
             textoModificado = "0"
-        }
-
-        
+        }       
         fmt.Println(textoModificado)
     }
 }

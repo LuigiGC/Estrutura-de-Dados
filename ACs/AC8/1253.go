@@ -18,7 +18,6 @@ func main() {
 					novaLetra += 26
 				}
 				textoDecifrado += string(novaLetra)
-
 		}
 	fmt.Println(textoDecifrado)
 	}

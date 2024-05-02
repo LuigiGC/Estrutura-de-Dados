@@ -26,7 +26,6 @@ func main() {
 				Tled += 7
 			}
 		}
-
 		fmt.Println(Tled, "leds")
 	}
 }
